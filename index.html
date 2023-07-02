@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout Example</title>
+  <style>
+    /* CSS styling */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #f5f5f5;
+      color: #333;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #333;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ffcc00;
+    }
+
+    .navbar-brand a {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    .square {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    #square1 {
+      background-color: #ffffcc;
+    }
+
+    #square2 {
+      background-color: #ffffcc;
+    }
+
+    #square3 {
+      background-color: #add8e6;
+    }
+
+    #square4 {
+      background-color: #add8e6;
+    }
+
+    #rectangle {
+      width: 350px;
+      height: 600px;
+      background-color: #ffb6c1;
+      border-radius: 10px;
+    }
+
+    .footer {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-brand">
+      <a href="#" class="logo">Trevor Ewart</a>
+    </div>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <h1 style="text-align: center;">Home</h1>
+
+  <div class="container">
+    <div class="top-squares">
+      <div id="square1" class="square"></div>
+      <div id="square2" class="square"></div>
+    </div>
+    <div class="bottom-squares">
+      <div id="square3" class="square"></div>
+      <div id="square4" class="square"></div>
+    </div>
+    <div id="rectangle"></div>
+  </div>
+
+  <div class="footer">
+    &copy; 2023 Trevor Ewart. All rights reserved.
+  </div>
+</body>
+</html>
